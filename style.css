@@ -1,0 +1,514 @@
+/* Resetowanie styli */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+/* Styl nawigacji */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #ffffff;
+  padding: 0 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  padding-top: 10px;
+  height: 50px;
+}
+
+.navbar-links-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  /* font-weight: bold; */
+  /* text-transform: uppercase; */
+  margin: 0 10px;
+}
+.navbar-links a:hover {
+  font-weight: bold;
+  font-size: 19px;
+}
+/* nav {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #dddddd;
+} */
+
+/* Styl nagłówka */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  max-width: 20%;
+  padding-top: 90px;
+  transform: scale(1.2);
+  animation: pulse 5s ease-in-out infinite;
+}
+header img:hover {
+  transform: scale(1.2);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Styl formularza wyszukiwania */
+form {
+  text-align: center;
+  margin: 40px 0;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #9706f7;
+  border-radius: 4px;
+  width: 30%;
+  margin-right: 10px;
+}
+
+/* form button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* Styl stopki */
+footer {
+  text-align: center;
+  background: linear-gradient(to bottom, #8907d4, #1e28b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: #000000;
+  padding: 20px;
+  margin-top: 40px;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  text-align: center;
+  padding: 10px;
+}
+#radio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+#audio {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 5px;
+  background-color: #eee;
+  border: 2px solid purple;
+  outline: none;
+}
+
+button {
+  background-color: #1abc9c;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+#search-results {
+  margin: 20px;
+}
+/* wyszukiwanie tekstu */
+
+#search-results {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+#search-button {
+  background: linear-gradient(to bottom, #81236a, #101780);
+  border: none;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#search-button:hover {
+  background: linear-gradient(to bottom, #3d092e, #4c9aff);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pulse-animation {
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+#random-button {
+  background-color: #6f118b;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 8px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+#random-button:hover {
+  background-color: #540a5c;
+}
+
+/* div lso sekcja */
+.sectionlso {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.sectionlso img {
+  height: 30vh;
+}
+
+.sectionlso p {
+  color: rgb(202, 0, 253);
+
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #c604ec 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 48px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* sekcja kanaly lso */
+.kanalyinfo {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.kanalyinfo p {
+  color: rgb(202, 0, 253);
+
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #7700ff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 28px;
+  rotate: 35deg;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* płyty */
+.album-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.album-cover img {
+  max-width: 80%;
+}
+
+.tracklist {
+  margin-left: 20px;
+}
+
+.tracklist h2 {
+  margin-top: 0;
+}
+
+.tracklist ol {
+  padding: 0;
+  margin: 0;
+}
+
+.tracklist li {
+  margin-top: 10px;
+}
+/*na telefony */
+@media (max-width: 768px) {
+  .album-container {
+    flex-direction: column;
+  }
+
+  .album-cover {
+    margin-bottom: 20px;
+  }
+
+  .tracklist {
+    margin-left: 0;
+  }
+}
+
+.tracklist h2 {
+  position: relative;
+}
+.tracklist h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 32px;
+  color: #c406f3;
+  animation: flip 3s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+/*smoke effect */
+.lso span {
+  font-size: 32px;
+  display: inline-block;
+  text-shadow: 0 0 0 whitesmoke;
+  animation: smoky 5s 3s both;
+}
+
+span:nth-child(even) {
+  animation-name: smoky-mirror;
+}
+
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg)
+      scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes smoky-mirror {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg)
+      scale(2);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@for $item from 1 through 21 {
+  span:nth-of-type(#{$item}) {
+    animation-delay: #{(3 + ($item/10))}s;
+  }
+}
+.kanalyinfo img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  filter: grayscale(0%);
+  transition: all 0.3s ease-in-out;
+}
+
+.kanalyinfo img:hover {
+  transform: scale(1.1) rotate(20deg);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  filter: brightness(120%);
+}
+
+.sectionlso img:hover {
+  transform: scale(1.1);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.kontakt {
+  justify-content: center;
+  text-align: center;
+}
+
+/*tabela kontakt */
+.tabela {
+  margin: 0 auto; /* Ustawienie marginesów poziomych na "auto" umieści tabelę na środku strony */
+  margin-top: 60px;
+  border-collapse: collapse;
+  width: 50%; /* Ustawienie szerokości tabeli na 80% szerokości okna przeglądarki */
+}
+td,
+th {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+}
+/* CYTAT */
+.quotes {
+  display: block;
+  text-align: center;
+  margin: 50px 50px;
+}
+.quotes button {
+  margin-top: 50px;
+  padding: 10px; /* Dodaje padding dla przycisku */
+  background-color: #c6c9ce; /* Ustawia kolor tła przycisku */
+  color: #0f0f0f; /* Ustawia kolor tekstu przycisku */
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none; /* Usuwa obramowanie przycisku */
+  border-radius: 5px; /* Dodaje zaokrąglenia do przycisku */
+  cursor: pointer; /* Zmienia kursor na strzałkę przy najechaniu na przycisk */
+}
+.quotes button:hover {
+  background-color: #0069d9; /* Zmienia kolor tła przycisku przy najechaniu na niego myszką */
+}
+.quotes p {
+  cursor: cell;
+  margin-top: 50px;
+  font-size: 20px; /* Ustawia rozmiar tekstu cytatu */
+  font-style: italic; /* Ustawia kursywę dla tekstu cytatu */
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff,
+    0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+}
+
+/* .quotes p {
+  animation-name: pulse;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+} */

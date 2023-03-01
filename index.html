@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Syberia - tytuły</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="logo2x.png" alt="Logo" />
+      </div>
+      <div class="navbar-links-container">
+        <div class="navbar-links">
+          <a href="index.html">Wyszukaj</a>
+          <a href="kanały.html">Kanały</a>
+          <a href="lso.html">LSO</a>
+          <a href="plyty.html">Płyty</a>
+          <a href="kontakt.html">Kontakt</a>
+          <a href="quote.html">SyberiaQuotes</a>
+          <a>&nbsp;</a>
+          <a>&nbsp;</a>
+          <a>&nbsp;</a>
+          <a>&nbsp;</a>
+          <a>&nbsp;</a>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <img src="logocmaz.png" alt="Logo CMAZ" />
+    </header>
+
+    <main>
+      <form id="search-form">
+        <label for="search-input">Szukaj tytułu:</label>
+        <input id="search-input" type="text" name="search" required />
+        <button id="search-button" type="submit" class="pulse-animation">
+          TDW
+        </button>
+      </form>
+      <div id="radio">
+        <audio
+          id="audio"
+          controls
+          controlsList="nodownload noplaybackrate"
+        ></audio>
+        <button id="random-button" type="button">Losuj piosenkę</button>
+      </div>
+
+      <div id="search-results"></div>
+    </main>
+
+    <footer>&copy; 2023 by Hattrik</footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

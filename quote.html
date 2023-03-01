@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>SyberiaQuotes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="logo2x.png" alt="Logo" />
+      </div>
+      <div class="navbar-links-container">
+        <div class="navbar-links">
+          <a href="index.html">Wyszukaj</a>
+          <a href="kanały.html">Kanały</a>
+          <a href="lso.html">LSO</a>
+          <a href="plyty.html">Płyty</a>
+          <a href="kontakt.html">Kontakt</a>
+          <a href="quote.html">SyberiaQuotes</a>
+          <a>&nbsp;</a>
+          <a>&nbsp;</a>
+          <a>&nbsp;</a>
+          <a>&nbsp;</a>
+          <a>&nbsp;</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Definiujemy tablicę z cytatami
+      var quotes = [
+        "Jeden mały krok może zmienić cały świat, tak jak w Twoim małym świecie możesz postawić wielki krok.",
+        "A może to tylko jedno, co mamy tu, a nie będzie już nic na pewno, bo człowiek znika w popiół, wypalając się jak drewno.",
+        "-Przykro mi, współczuje Ci, gdybym tylko mógł to bym Ci ziomuś pomógł. <br> Przestań człowieku, nie wykonałbyś ruchu gdybyś wiedział w duchu, że kawałek życia swego tracisz<br> Poświęceniem zapłacisz, a gdzie indziej się wzbogacisz",
+        "Siłą jest spokój, nie ma życia bez kompromisów, <br>na wielkich szczytach zostawiam swoje zmysły, <br>by poczuć to czym jest prawdziwa wolność, <br>7 świętych dni to 7 cierpień i szczęść, <br>ostatni raz kiedy chce mieć to wszystko pojęte, <br>a tylko marzenie jedno - być tam gdzie czego nie chce nie ma, <br>tęsknota to najcięższa z trwóg dla pełnego miłości człowieka, <br>martwi przewracają się w grobach, głupcy targają się na własne losy, <br>trudy, a z nimi wytchnienia, stany nieważkości trwają tylko sekundy,<br>nie odwracalne wydarzenia, zostaje po nich tylko cisza, <br>ale jesteś tu i my wszyscy wokół, <br>a na tym pięknym świecie potrafimy być Bogami, <br>jak i utonąć w beznadziei",
+        "Ty masz po co iść, ty masz po co żyć, ty masz <br> po co ci narkotykowy crack...<br> trzeba inwestować w życie i ambicje non stop",
+        "Dzisiaj śniłem o tym, że kochać warto i wierzyć warto, <br> a ile jest nienawiść warta jeżeli umiera przez nią cały świat ",
+        "Ale proste nie wchodz na ostrze, <br> bo jest ostre, masz moc to przejdz całym mostem. <br> Na samym czycha podstęp, bo ludzie ludzi kłamią. <br> Wiara - znam ją, a szansa ważna, więc im dam ją.",
+        "Bo życie jest za krótkie, by nie iść przez nie środkiem, tutaj moneta jest środkiem nam do uświęcenia celu, przyjecielu jak narzekasz jesteś jednym z nas wielu, stracisz godność dla pieniędzy równać będziesz się zeru.",
+        "Świat ten to szmata, za to nic mnie już nie zdziwi<br>Oddech da nadzieję dzieciak do ostatniej chwili<br>Wdzięczność, intuicja za to że są ci co byli<br>Uścisnąłbym przyjaciół moich żeby tylko żyli<br>Jak najdalej wojny, proszę, chcę już być spokojny<br>Więcej paranoi jeśli więcej bogobojnych<br>Czy jesteś jeden z tych, którzy nie stronią od pychy<br>Daj być światu własnym światem, patrz do swojej michy.",
+        "Kiedy nie ma mnie dla ciebie, znaczy nie ma mnie kurwa,<br>nie ma mnie, nie ma cie, nie ma nas, jest bass,<br>tylko ja i on, to jest coś jak schron,<br>to jest coś jak dom, wiesz o tym ziomek,<br>uderzenia z membrany dają drgania na twarzy,<br>lece z tymi falami WuPADeS se pomarzyć,<br>wiesz o co kaman, czy ogarniasz szmat starań,<br>które wrzucam na ten rap, które wrzucam ci brat,<br>chodz, masz, prosze, złap, teraz na to mnie stać,<br>może kiedyś będzie coś przez co będe gość.",
+      ];
+
+      // Funkcja losująca cytat z tablicy i wyświetlająca go w elemencie o id "quote"
+      function getRandomQuote() {
+        var randomIndex = Math.floor(Math.random() * quotes.length);
+        var quoteElement = document.getElementById("quote");
+        quoteElement.innerHTML = quotes[randomIndex];
+      }
+    </script>
+  </head>
+  <body>
+    <div class="quotes">
+      <h1>SyberiaQuotes</h1>
+      <button onclick="getRandomQuote()">Losuj cytat</button>
+      <p id="quote"></p>
+    </div>
+  </body>
+</html>
